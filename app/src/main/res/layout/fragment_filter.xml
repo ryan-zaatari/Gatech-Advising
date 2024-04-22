@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilterFragment">
+
+    <CheckBox
+        android:id="@+id/chkEnableNameFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of event must start with:" />
+
+    <EditText
+        android:id="@+id/editTextNameFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/chkBoxHostFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Host must be:" />
+
+    <EditText
+        android:id="@+id/editTextHostFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/chkBoxLocationFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location must be" />
+
+    <EditText
+        android:id="@+id/editTextLocationFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</LinearLayout>

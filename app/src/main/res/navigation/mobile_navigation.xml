@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/welcomeActivity">
+    <activity
+        android:id="@+id/welcomeActivity"
+        android:name="com.example.campusdiscovery.WelcomeActivity"
+        android:label="activity_welcome"
+        tools:layout="@layout/activity_welcome" />
+    <activity
+        android:id="@+id/primaryActivity"
+        android:name="com.example.campusdiscovery.PrimaryActivity"
+        android:label="activity_primary"
+        tools:layout="@layout/activity_primary" />
+</navigation>

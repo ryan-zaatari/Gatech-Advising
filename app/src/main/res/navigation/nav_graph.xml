@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.campusdiscovery.SignupFragment"
+        android:label="Signup to TheBuzz"
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.campusdiscovery.EventsFragment"
+        android:label="Find out what's buzzing"
+        tools:layout="@layout/fragment_events">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_create_edit_event"
+            app:destination="@id/create_edit_event" />
+        <action
+            android:id="@+id/action_SecondFragment_to_RSVPListFragment"
+            app:destination="@id/RSVPListFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_welcomeActivity2"
+            app:destination="@id/welcomeActivity2" />
+        <action
+            android:id="@+id/action_SecondFragment_to_inviteeListFragment"
+            app:destination="@id/inviteeListFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_yourEventsFragment"
+            app:destination="@id/yourEventsFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/create_edit_event"
+        android:name="com.example.campusdiscovery.CreateOrEditFragment"
+        android:label="Create or Edit Event"
+        tools:layout="@layout/fragment_create_edit_event" >
+        <action
+            android:id="@+id/action_create_edit_event_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RSVPListFragment"
+        android:name="com.example.campusdiscovery.RSVPListFragment"
+        android:label="RSVP List"
+        tools:layout="@layout/fragment_rsvp_list_list" >
+        <action
+            android:id="@+id/action_RSVPListFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/welcomeActivity2"
+        android:name="com.example.campusdiscovery.WelcomeActivity"
+        android:label="Welcome"
+        tools:layout="@layout/activity_welcome" />
+    <fragment
+        android:id="@+id/inviteeListFragment"
+        android:name="com.example.campusdiscovery.InviteeListFragment"
+        android:label="fragment_invitee_list_list"
+        tools:layout="@layout/fragment_invitee_list_list" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.campusdiscovery.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.campusdiscovery.FilterFragment"
+        android:label="Filter Events"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/yourEventsFragment"
+        android:name="com.example.campusdiscovery.YourEventsFragment"
+        android:label="Your Events"
+        tools:layout="@layout/fragment_your_events" />
+</navigation>
