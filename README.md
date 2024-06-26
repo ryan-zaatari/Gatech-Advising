@@ -1,1 +1,1 @@
-# team60-events-app
+Georgia Tech events Android app
